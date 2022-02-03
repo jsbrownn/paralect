@@ -1,11 +1,12 @@
-function sleep(num){
-  return new Promise((resolve,reject)=>{
-   setTimeout(()=>{
+function sleep(num) {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve,num)
+})}
 
-   },num)
+sleep(1000)
+  .then((result) => {
+    console.log('foo')
   })
-}
 
-sleep(5000).then((resolve)=>{
-  console.log('foo')
-})
+
+  
